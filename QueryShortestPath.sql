@@ -179,7 +179,7 @@ where [origin] = 'Udaipur'
     and [destination] = 'Neemrana'
 
   --  and TransfersCount <= 2
-ORDER BY 2 DESC
+ORDER BY 2 ,6 DESC 
 
 select * from troute
 --------------------------------------------------------------
