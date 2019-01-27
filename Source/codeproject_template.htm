@@ -1,0 +1,304 @@
+﻿<!DOCTYPE HTML>
+<!--------------------------------------------------------------------------->
+<!--                           INTRODUCTION
+
+ The CodeProject article submission template (HTML version)
+
+Using this template will help us post your article sooner. To use, just
+follow the 3 easy steps below:
+
+     1. Fill in the article description details
+     2. Add links to your images and downloads
+     3. Include the main article text
+
+That's all there is to it! All formatting will be done by our submission
+scripts and style sheets.
+
+-->
+<!--------------------------------------------------------------------------->
+<!--                        IGNORE THIS SECTION                            -->
+<html>
+<head>
+    <title>CodeProject</title>
+    <Style>
+        BODY, P, TD {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 10pt
+        }
+
+        H2, H3, H4, H5 {
+            color: #ff9900;
+            font-weight: bold;
+        }
+
+        H2 {
+            font-size: 13pt;
+        }
+
+        H3 {
+            font-size: 12pt;
+        }
+
+        H4 {
+            font-size: 10pt;
+            color: black;
+        }
+
+        PRE {
+            BACKGROUND-COLOR: #FBEDBB;
+            FONT-FAMILY: "Courier New", Courier, mono;
+            WHITE-SPACE: pre;
+        }
+
+        CODE {
+            COLOR: #990000;
+            FONT-FAMILY: "Courier New", Courier, mono;
+        }
+    </Style>
+    <link type="text/css" rel="stylesheet"
+          href="https://codeproject.global.ssl.fastly.net/App_Themes/CodeProject/Css/Main.min.css">
+</head>
+<body bgcolor="#FFFFFF" color=#000000>
+    <!--------------------------------------------------------------------------->
+    <!-------------------------------     STEP 1      --------------------------->
+    <!--  Fill in the details (CodeProject will reformat this section for you) -->
+
+<pre>
+Title:       Pathfinding Algorithms in C#
+Author:      KristianEkman
+Email:       kristian.ekman.swe@gmail.com
+Language:    C#
+Platform:    Windows
+Technology:  Winforms .net framework
+Level:       Advanced
+Description: A comparison of Dijkstra and A*
+Section      General Programming
+SubSection   Algorithms
+License:     CPOL
+</pre>
+
+    <!-------------------------------     STEP 2      --------------------------->
+    <!--  Include download and sample image information.                       -->
+
+    <ul class=download>
+        <li><a href="MyDijkstra.zip">Download source - XXX Kb</a></li>
+    </ul>
+
+    <p><i>Unzip and open solution in Visual Studio 2017</i></p>
+
+    <p>
+        <img src="testform.png" alt="Image">
+    </p>
+
+    <!-------------------------------     STEP 3      --------------------------->
+    <!--  Add the article text. Please use simple formatting (<h2>, <p> etc)   -->
+
+    <h2>Introduction</h2>
+    <p>
+        Have you ever wondered how GPS applications calculate the fastest way to a chosen destination?<br />
+        As you will see it is actually quite simple.
+    </p>
+    <p>
+        This article explains this and provides sample code that you are free to use as you like. The article also compares two common basic algorithms, Dijkstra and A*.
+    </p>
+
+    <h2>The problem</h2>
+    <p>
+        Let’s say you have a map. You know where you are and where you want to go. The map has roads (they are called edges) that connect the nodes (places with coordinates).<br />
+        From every node you can go to one or many edges. An edge has a cost (e.g. length or time it takes to travel it).<br />
+        For small maps one could perhaps calculate all possible routes to the destination and select the shortest. But that is not very practical for maps with many nodes as the combinations grow exponentially.
+    </p>
+
+    <h2>Dijkstra</h2>
+    The Dijkstra algorithm was discovered in 1959 by Edsger Dijkstra.
+    This is how it works:
+    <ol>
+        <li>From the start node add all connected nodes to a priority queue.</li>
+        <li>
+            Sort the priority queue by lowest cost and make the first node the current node.<br />
+            For every child node, select the best that leads to the shortest path to start.<br />
+            When all edges have been investigated from a node, that node is "Visited" and you don´t need to go there again.<br />
+        </li>
+        <li>Add each child node connected to the current node to the priority queue.</li>
+        <li>Go to step 2 until the queue is empty.</li>
+        <li>Recursively create a list of each nodes node that leads the shortest path from end to start.</li>
+        <li>Reverse the list and you have found the shortest path.</li>
+    </ol>
+
+    <p>Below is my Dijkstra Algorithm implementation in C# code. Probably a lot easier to understand than the above.</p>
+
+    <pre lang="C#">
+public List&lt;Node&gt; GetShortestPathDijikstra()
+{
+    DijkstraSearch();
+    var shortestPath = new List&lt;Node&gt;();
+    shortestPath.Add(End);
+    BuildShortestPath(shortestPath, End);
+    shortestPath.Reverse();
+    return shortestPath;
+}
+
+private void BuildShortestPath(List&lt;Node&gt; list, Node node)
+{
+    if (node.NearestToStart == null)
+        return;
+    list.Add(node.NearestToStart);
+    BuildShortestPath(list, node.NearestToStart);
+}
+
+private void DijkstraSearch()
+{
+    Start.MinCostToStart = 0;
+    var prioQueue = new List&lt;Node&gt;();
+    prioQueue.Add(Start);
+    do {
+        prioQueue = prioQueue.OrderBy(x => x.MinCostToStart).ToList();
+        var node = prioQueue.First();
+        prioQueue.Remove(node);
+        foreach (var cnn in node.Connections.OrderBy(x =&gt; x.Cost))
+        {
+            var childNode = cnn.ConnectedNode;
+            if (childNode.Visited)
+                continue;
+            if (childNode.MinCostToStart == null ||
+                node.MinCostToStart + cnn.Cost &lt; childNode.MinCostToStart)
+            {
+                childNode.MinCostToStart = node.MinCostToStart + cnn.Cost;
+                childNode.NearestToStart = node;
+                if (!prioQueue.Contains(childNode))
+                    prioQueue.Add(childNode);
+            }
+        }
+        node.Visited = true;
+        if (node == End)
+            return;
+    } while (prioQueue.Any());
+}
+    </pre>
+    <p>
+        <img src="Dijkstra.png" alt="Image">
+    </p>
+    <p>
+        This is a randomly generated map in my test program. The dots are nodes and between them are lines which represent edges. This map consists of 5000 nodes and 15000 edges.<br />
+        Lighter colored dots are visited by the search algorithm and the best path is drawn in green.
+    </p>
+    <h2>A* Algorithm</h2>
+    <p>
+        There are many improvements of Dijkstra’s algorithm. One of the most common is called A*.<br />
+        It is basically the same as Dijkstra with one simple modification.<br />
+        Edges are prioritized also with respect to how much closer that edge leads to a straight-line distance to the goal. So before running an A* search, the straight-line distance to the final destination has to be measured for every node, which is easy if you know each nodes coordinate.<br />
+        This algorithm has a big performance advantage since it does not need to visit as many nodes when the direction of the path end is known.<br />
+        See my implementation below. I underlined what is added to Dijkstra’s Algorithm.
+    </p>
+
+    <pre lang="C#">
+public List&lt;Node&gt; GetShortestPathAstart()
+{
+    <u>foreach (var node in Map.Nodes)</u>
+        <u>node.StraightLineDistanceToEnd = node.StraightLineDistanceTo(End);</u>
+    AstarSearch();
+    var shortestPath = new List&lt;Node&gt;();
+    shortestPath.Add(End);
+    BuildShortestPath(shortestPath, End);
+    shortestPath.Reverse();
+    return shortestPath;
+}
+
+private void AstarSearch()
+{
+    Start.MinCostToStart = 0;
+    var prioQueue = new List&lt;Node&gt;();
+    prioQueue.Add(Start);
+    do {
+        prioQueue = prioQueue.OrderBy(x =&gt; x.MinCostToStart <u>+ x.StraightLineDistanceToEnd</u>).ToList();
+        var node = prioQueue.First();
+        prioQueue.Remove(node);
+        NodeVisits++;
+        foreach (var cnn in node.Connections.OrderBy(x =&gt; x.Cost))
+        {
+            var childNode = cnn.ConnectedNode;
+            if (childNode.Visited)
+                continue;
+            if (childNode.MinCostToStart == null ||
+                node.MinCostToStart + cnn.Cost &lt; childNode.MinCostToStart)
+            {
+                childNode.MinCostToStart = node.MinCostToStart + cnn.Cost;
+                childNode.NearestToStart = node;
+                if (!prioQueue.Contains(childNode))
+                    prioQueue.Add(childNode);
+            }
+        }
+        node.Visited = true;
+        if (node == End)
+            return;
+    } while (prioQueue.Any());
+}
+</pre>
+    <p>
+        <img src="Astar.png" alt="Image">
+    </p>
+    <p>This is the same map as above, but the path is calculated with A* algorithm. As you can see there are much less nodes that needs to be visited.
+    </p>
+
+    <h2>Results</h2>
+    When running both algorithms on the same map of 500,000 nodes I get these results.
+    <table style="width:50%;">
+        <tr>
+            <td></td>
+            <td>Dijkstra</td>
+            <td>A*</td>
+        </tr>
+        <tr>
+            <td>Visited nodes</td>
+            <td>330,871</td>
+            <td>19,410</td>
+        </tr>
+        <tr>
+            <td>Time to calculate</td>
+            <td>850ms</td>
+            <td>127ms</td>
+        </tr>
+        <tr>
+            <td>Cost of best path</td>
+            <td>14,322</td>
+            <td>22,994</td>
+        </tr>
+        <tr>
+            <td>Distance of shortest path</td>
+            <td>0,82446</td>
+            <td>0,82446</td>
+        </tr>
+    </table>
+    <p>
+        As you can see in the table above, A* algorithm is about 7 times faster, and they both find the shortest path.<br />
+        However, when a random number is generated for the cost of an edge Dijkstra finds a path of lower cost.<br />
+        In a real map, for example, the shortest path isn’t always the best. Driving on roads with higher speed limit will probably take you to your destination sooner.<br />
+        That is why adding a random number to the cost of an edge makes this experiment more realistic.
+    </p>
+    
+    <h2>Conclusion</h2>
+    <p>
+        So what algorithm is the best path finding algorithm of Dijkstra and A*?<br />
+        I’d say it depends. If you are only interested in the shortest path, it is A*.<br />
+        It is much faster, and it gives the same result as Dijkstra. But if there are other aspects of the cost of an edge than its length, Dijkstra is better in finding the best path. After all, it is still very fast. I think 500,000 nodes is a very large data set. I also think my implementation can be optimized a lot.<br />
+        Thanks for reading and I hope you feel path finding algorithms are as much fun as I do by now.<br /><br />
+        Have a nice day!
+    </p>
+
+    <!--<pre>//
+    // Any source code blocks look like this
+    //
+    var i = 0;
+    ...</pre>-->
+    <!--<p>Remember to set the Language of your code snippet using the Language dropdown. </p>-->
+
+
+    <h2>History</h2>
+    <ul>
+        <li>Dec 10, 2017 - Version 1.0</li>
+    </ul>
+    <!--<p>Keep a running update of any changes or improvements you've made here. </p>-->
+    <!-------------------------------    That's it!   --------------------------->
+</body>
+
+</html>

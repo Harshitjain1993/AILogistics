@@ -1,0 +1,21 @@
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Debug\MyDjikstra.dll.config
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Debug\MyDjikstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Debug\MyDjikstra.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Debug\Common.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Debug\Common.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Debug\MyDjikstra.csprojResolveAssemblyReference.cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Debug\MyDjikstra.csproj.CoreCompileInputs.cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Debug\MyDjikstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Debug\MyDjikstra.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Debug\DataStructures.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Debug\DataStructures.pdb
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\bin\Debug\MyDjikstra.dll.config
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\bin\Debug\MyDjikstra.dll
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\bin\Debug\MyDjikstra.pdb
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\bin\Debug\Common.dll
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\bin\Debug\Common.pdb
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\obj\Debug\MyDjikstra.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\obj\Debug\MyDjikstra.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\obj\Debug\MyDjikstra.csproj.CopyComplete
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\obj\Debug\MyDjikstra.dll
+C:\Users\Admin\Desktop\AILogistics\Source\MyDjikstra\obj\Debug\MyDjikstra.pdb

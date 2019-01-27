@@ -1,0 +1,40 @@
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MapViewer.exe.config
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MapViewer.exe
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MapViewer.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\Common.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MultiDijkstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MyDjikstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\Common.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MultiDijkstra.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MyDjikstra.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MyDjikstra.dll.config
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.csprojResolveAssemblyReference.cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.Form1.resources
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.Properties.Resources.resources
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.csproj.GenerateResource.Cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.csproj.CoreCompileInputs.cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.exe
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\DataStructures.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\DataStructures.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MinToMaxDijikstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\MinToMaxDijikstra.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\StatelessDijkstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\bin\Debug\StatelessDijkstra.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MapViewer\obj\Debug\MapViewer.GeneticDashboard.resources
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\MapViewer.exe.config
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\MapViewer.exe
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\MapViewer.pdb
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\Common.dll
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\MyDjikstra.dll
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\Common.pdb
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\MyDjikstra.pdb
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\bin\Debug\MyDjikstra.dll.config
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.Form1.resources
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.Properties.Resources.resources
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.csproj.CopyComplete
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.exe
+C:\Users\Admin\Desktop\AILogistics\Source\MapViewer\obj\Debug\MapViewer.pdb

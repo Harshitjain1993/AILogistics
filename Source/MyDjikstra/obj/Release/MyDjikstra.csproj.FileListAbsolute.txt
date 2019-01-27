@@ -1,0 +1,11 @@
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Release\MyDjikstra.dll.config
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Release\MyDjikstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Release\MyDjikstra.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Release\Common.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Release\DataStructures.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Release\Common.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\bin\Release\DataStructures.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Release\MyDjikstra.csprojResolveAssemblyReference.cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Release\MyDjikstra.csproj.CoreCompileInputs.cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Release\MyDjikstra.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\MyDjikstra\obj\Release\MyDjikstra.pdb

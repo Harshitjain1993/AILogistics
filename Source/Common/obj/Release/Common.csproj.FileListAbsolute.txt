@@ -1,0 +1,6 @@
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\Common\bin\Release\Common.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\Common\bin\Release\Common.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\Common\obj\Release\Common.csproj.CoreCompileInputs.cache
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\Common\obj\Release\Common.dll
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\Common\obj\Release\Common.pdb
+C:\Users\Kristian\Documents\Visual Studio 2017\Projects\MyDjikstra\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
